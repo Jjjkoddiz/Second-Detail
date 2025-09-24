@@ -1,0 +1,22 @@
+body {
+  background: #101010;
+}
+
+h1 {
+  font-family: 'DINCondensed-Regular';
+  font-size: 12vw;
+  color: #eeeeee;
+}
+
+h2 {
+  font-family: 'Inter-SemiBold';
+  font-size: 6vw;
+  font-weight: 500;
+  color: #eeeeee;
+}
+
+.first_screen {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
