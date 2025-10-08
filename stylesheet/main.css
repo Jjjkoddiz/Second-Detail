@@ -18,7 +18,7 @@ h2 {
 p {
   font-family: 'Inter-SemiBold';
   font-size: 1vw;
-  color: #becee0;
+  color: #a9b7c8;
 }
 
 .logo {
@@ -36,25 +36,21 @@ p {
 nav {
   display: flex;
   margin-left: 48vw;
-  align-items: center; /* Выравнивание по вертикали */
-  height: 100%;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   margin-top: 1vw;
   padding: 2vw 1vw; /* (левый отступ между элементами) */
-  transition: color 0.3s, background-color 0.3s;
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #f0f0f0; /* Более бледный цвет текста при наведении */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Легкий полупрозрачный белый фон при наведении */
+  color: #a9b7c8;
 }
 
 .button {
@@ -151,44 +147,24 @@ nav a:hover {
   overflow: hidden;
 }
 
-.second_screen .container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
 .second_screen .text-content {
   width: 100%;
   padding-left: 6vw;
   padding-right: 4vw;
-  padding-top: 2vw;
   box-sizing: border-box;
 }
 
 .second_screen h2 {
   margin-top: 2vw;
-  margin-bottom: 1vw;
-}
-
-.second_screen h3 {
-  font-family: 'Inter-SemiBold';
-  font-size: 1.2vw;
-  color: #eeeeee;
-  margin-top: 1.5vw;
-  margin-bottom: 0.5vw;
 }
 
 .second_screen p {
-  font-family: 'Inter-SemiBold';
-  font-size: 1vw;
-  color: #becee0;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
 
 .process-list {
   padding-left: 2vw;
-  margin: 2vw 0;
 }
 
 .process-list ol,
@@ -204,25 +180,18 @@ nav a:hover {
   margin-bottom: 0.5vw;
 }
 
-.process-list ul li {
-  list-style-type: disc;
-  /* основные пункты списка (•) */
-}
-
 .process-list ol li {
   list-style-type: decimal;
-  /* нумерованные пункты (1, 2, 3) */
 }
 
-.second_screen strong {
-  color: #ffffff;
+.process-list ul li {
+  list-style-type: square;
 }
 
 .button2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 6vw;
   margin-top: 2vw;
   width: 8vw;
   height: 3vw;
@@ -240,4 +209,22 @@ nav a:hover {
 .button2:hover {
   background-color: #e0e0e0;
   color: #0166ff;
+}
+
+.third_screen {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+  height: 400px;
 }

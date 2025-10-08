@@ -18,7 +18,7 @@ h2 {
 p {
   font-family: 'Inter-SemiBold';
   font-size: 1vw;
-  color: #becee0;
+  color: #a9b7c8;
 }
 
 .logo {
@@ -36,25 +36,29 @@ p {
 nav {
   display: flex;
   margin-left: 48vw;
-  align-items: center; /* Выравнивание по вертикали */
-  height: 100%;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   margin-top: 1vw;
   padding: 2vw 1vw; /* (левый отступ между элементами) */
-  transition: color 0.3s, background-color 0.3s;
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #f0f0f0; /* Более бледный цвет текста при наведении */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Легкий полупрозрачный белый фон при наведении */
+  color: #a9b7c8; /* Цвет текста при наведении */
+}
+
+nav a.active {
+  color: #ffffff;
+}
+
+nav a.active:hover {
+  color: #ffffff;
 }
 
 .button {
@@ -89,6 +93,7 @@ nav a:hover {
   text-align: center;
   margin-top: 2vw;
 }
+
 .cards-container {
   display: flex;
   gap: 2vw;
@@ -120,4 +125,117 @@ nav a:hover {
   padding: 3vw 2vw 2vw 2vw;
   text-align: left;
   box-sizing: border-box;
+}
+.company-info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 2vw;
+}
+
+.company-info-section h1 {
+  text-align: center;
+}
+
+.company-tbl {
+  width: 800px;
+  margin-top: 2vw;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url('../images/backgroundtable.png') center/cover no-repeat;
+}
+
+.company-tbl__td {
+  border: 0.1vw solid #ccc;
+  text-align: left;
+}
+
+.td_main {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-left: 20px;
+  gap: 40px;
+}
+
+.logoimag {
+  width: 339px;
+  height: 120px;
+}
+
+.td_services {
+  width: 150px;
+  height: 200px;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.td_services p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #a9b7c8;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.arrow {
+  font-size: 30px;
+  color: #a9b7c8;
+}
+
+.td_production {
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  padding: 0;
+}
+
+.production-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.td_info {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.td_info p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #a9b7c8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.td_contacts {
+  height: 80px;
+  padding: 20px;
+}
+
+.contacts p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #a9b7c8;
+  margin: 5px 0;
+}
+
+.link {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.9vw;
 }
