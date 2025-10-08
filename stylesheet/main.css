@@ -1,22 +1,243 @@
 body {
-  background: #101010;
+  background: #0166ff;
 }
 
 h1 {
   font-family: 'DINCondensed-Regular';
-  font-size: 12vw;
+  font-size: 6vw;
   color: #eeeeee;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: 'Inter-SemiBold';
-  font-size: 6vw;
-  font-weight: 500;
+  font-size: 1.2vw;
   color: #eeeeee;
+}
+
+p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #becee0;
+}
+
+.logo {
+  position: absolute;
+  left: 6vw;
+  top: 2vw;
+}
+
+.logo img {
+  width: 17vw;
+  height: 3vw;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  margin-left: 48vw;
+  align-items: center; /* Выравнивание по вертикали */
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: 1vw;
+  padding: 2vw 1vw; /* (левый отступ между элементами) */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: #f0f0f0; /* Более бледный цвет текста при наведении */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Легкий полупрозрачный белый фон при наведении */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 20px;
+  margin-top: 1.34vw;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #0166ff;
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* Бледный цвет фона при наведении */
+  color: #0166ff;
 }
 
 .first_screen {
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  width: 50%;
+  padding-left: 6vw;
+  padding-top: 2vw;
+  box-sizing: border-box;
+}
+
+.image-content {
+  width: 50%;
+  display: flex;
+  padding-top: 2vw;
+  padding-right: 4vw;
+  box-sizing: border-box;
+}
+
+.image-content img {
+  width: 50vw;
+  height: 38vw;
+  object-fit: contain;
+}
+
+.first_screen p {
+  margin-top: 3vw;
+}
+
+.first_screen .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+  height: 3vw;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-size: 1vw;
+  color: #0166ff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-right: 1vw;
+}
+
+.button1:hover {
+  background-color: #e0e0e0;
+  color: #0166ff;
+}
+
+.second_screen {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.second_screen .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.second_screen .text-content {
+  width: 100%;
+  padding-left: 6vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  box-sizing: border-box;
+}
+
+.second_screen h2 {
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.second_screen h3 {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+  margin-top: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.second_screen p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #becee0;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.process-list {
+  padding-left: 2vw;
+  margin: 2vw 0;
+}
+
+.process-list ol,
+.process-list ul {
+  padding-left: 2vw;
+  margin: 1vw 0;
+}
+
+.process-list li {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #becee0;
+  margin-bottom: 0.5vw;
+}
+
+.process-list ul li {
+  list-style-type: disc;
+  /* основные пункты списка (•) */
+}
+
+.process-list ol li {
+  list-style-type: decimal;
+  /* нумерованные пункты (1, 2, 3) */
+}
+
+.second_screen strong {
+  color: #ffffff;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6vw;
+  margin-top: 2vw;
+  width: 8vw;
+  height: 3vw;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-size: 1vw;
+  color: #0166ff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button2:hover {
+  background-color: #e0e0e0;
+  color: #0166ff;
 }

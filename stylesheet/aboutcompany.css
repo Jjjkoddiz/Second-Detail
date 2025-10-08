@@ -1,0 +1,123 @@
+body {
+  background: #0166ff;
+}
+
+h1 {
+  font-family: 'DINCondensed-Regular';
+  font-size: 6vw;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+}
+
+p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #becee0;
+}
+
+.logo {
+  position: absolute;
+  left: 6vw;
+  top: 2vw;
+}
+
+.logo img {
+  width: 17vw;
+  height: 3vw;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  margin-left: 48vw;
+  align-items: center; /* Выравнивание по вертикали */
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: 1vw;
+  padding: 2vw 1vw; /* (левый отступ между элементами) */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: #f0f0f0; /* Более бледный цвет текста при наведении */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Легкий полупрозрачный белый фон при наведении */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 20px;
+  margin-top: 1.34vw;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #0166ff;
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* Бледный цвет фона при наведении */
+  color: #0166ff;
+}
+
+.cards {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.headd {
+  text-align: center;
+  margin-top: 2vw;
+}
+.cards-container {
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку, если не помещаются */
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.5vw;
+  width: 25vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы (картинка, текст) вертикально */
+  align-items: center;
+}
+
+.card img {
+  width: 100%; /* Картинка занимает всю ширину родителя (карточки) */
+  height: auto;
+  display: block; /* Убирает лишний нижний отступ у картинки */
+  border-radius: 0.5vw 0.5vw 0 0;
+}
+
+.card-text {
+  width: 100%;
+  padding: 3vw 2vw 2vw 2vw;
+  text-align: left;
+  box-sizing: border-box;
+}
