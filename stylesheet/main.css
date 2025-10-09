@@ -94,6 +94,10 @@ nav a:hover {
   box-sizing: border-box;
 }
 
+.text-content p {
+  color: #a9b7c8;
+}
+
 .image-content {
   width: 50%;
   display: flex;

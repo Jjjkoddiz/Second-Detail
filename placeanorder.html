@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ВТОРАЯ ДЕТАЛЬ</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html">
+        <div class="logo" id="logo">
+          <img class="logoim" src="./images/logo.svg" />
+        </div>
+      </a>
+      <nav>
+        <a href="aboutcompany.html">О компании</a>
+        <a href="services.html">Услуги</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="https://www.juventalaser.ru/">Наши партнеры</a>
+        <a href="placeanorder.html" class="buttonatc">Сделать заказ</a>
+      </nav>
+    </header>
+    <section class="formcont">
+      <h1 class="formtextmain">Форма для заказа</h1>
+      <section class="form-section">
+        <form
+          action="https://www.bing.com/search?"
+          method="get"
+          target="_blank"
+        >
+          <!-- Личные данные -->
+          <h2>Ваши контактные данные</h2>
+          <div class="form-group">
+            <input
+              type="text"
+              name="last_name"
+              value="Иванов"
+              placeholder="Фамилия"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="first_name"
+              value="Петр"
+              placeholder="Имя"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="group"
+              value="Производственный отдел"
+              placeholder="Отдел"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="phone"
+              value="+79991234567"
+              placeholder="Телефон"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              value="ivanov@mail.ru"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="date"
+              name="message_date"
+              value="2024-10-02"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              value="123456"
+              placeholder="Пароль для чертежей"
+            />
+          </div>
+
+          <!-- Данные заказа -->
+          <h2>Информация о заказе</h2>
+          <div class="form-group">
+            <input
+              type="text"
+              name="detail_name"
+              value="Вал приводной"
+              placeholder="Название детали"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              name="quantity"
+              value="10"
+              placeholder="Количество штук"
+              required
+            />
+          </div>
+
+          <!-- Выбор материала -->
+          <div class="form-group">
+            <label>Выберите материал:</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" name="material" value="steel" checked />
+                <label>Сталь</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="material" value="aluminum" />
+                <label>Алюминий</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="material" value="copper" />
+                <label>Медь</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Дополнительные услуги -->
+          <div class="form-group">
+            <label>Дополнительные услуги:</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="heat_treatment"
+                  value="yes"
+                  checked
+                />
+                <label>Термообработка</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="delivery" value="yes" />
+                <label>Доставка</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Служебные поля -->
+          <div class="form-group">
+            <input
+              type="text"
+              name="000_file_name"
+              value="Н_ОW_Г_326510_1_Ivanov.png"
+            />
+          </div>
+          <div class="form-group">
+            <select name="010_mode">
+              <option value="a">Стандартный приоритет</option>
+              <option value="w">Срочный заказ</option>
+            </select>
+          </div>
+
+          <input type="hidden" name="function" value="page" />
+          <input type="hidden" name="page_id" value="3" />
+
+          <!-- Кнопки -->
+          <div class="button-group">
+            <input type="submit" class="submit-btn" value="Отправить заявку" />
+          </div>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>

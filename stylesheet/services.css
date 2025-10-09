@@ -1,0 +1,144 @@
+body {
+  background: #0166ff;
+}
+
+h1 {
+  font-family: 'DINCondensed-Regular';
+  font-size: 6vw;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+}
+
+p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #a9b7c8;
+}
+
+.logo {
+  position: absolute;
+  left: 6vw;
+  top: 2vw;
+}
+
+.logo img {
+  width: 17vw;
+  height: 3vw;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  margin-left: 48vw;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: 1vw;
+  padding: 2vw 1vw; /* (левый отступ между элементами) */
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a9b7c8; /* Цвет текста при наведении */
+}
+
+nav a.active {
+  color: #ffffff;
+}
+
+nav a.active:hover {
+  color: #ffffff;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 20px;
+  margin-top: 1.34vw;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #0166ff;
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.button:hover {
+  background-color: #e0e0e0; /* Бледный цвет фона при наведении */
+  color: #0166ff;
+}
+
+.problemsolving {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: 6vw;
+}
+
+.maintextproblem1 {
+  margin-top: 2vw;
+}
+
+.maintextproblem {
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+}
+
+.secondlabel {
+  color: #b1becf;
+}
+
+.secondinput {
+  width: 500px;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 2vw;
+}
+
+.button3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  width: 8vw;
+  height: 3vw;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-size: 1vw;
+  color: #0166ff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.button3:hover {
+  background-color: #e0e0e0;
+  color: #0166ff;
+}
+
+#result {
+  margin-top: 2vw;
+  font-size: 18px;
+  color: #e0e0e0;
+  font-family: 'Inter-SemiBold';
+}

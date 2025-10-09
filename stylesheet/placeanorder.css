@@ -1,0 +1,184 @@
+body {
+  background: #0166ff;
+}
+
+h1 {
+  font-family: 'DINCondensed-Regular';
+  font-size: 6vw;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+}
+
+p {
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #a9b7c8;
+}
+
+.logo {
+  position: absolute;
+  left: 6vw;
+  top: 2vw;
+}
+
+.logo img {
+  width: 17vw;
+  height: 3vw;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  margin-left: 48vw;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: 1vw;
+  padding: 2vw 1vw; /* (левый отступ между элементами) */
+  font-family: 'Inter-SemiBold';
+  font-size: 1.2vw;
+  color: #eeeeee;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a9b7c8; /* Цвет текста при наведении */
+}
+
+nav a.active {
+  color: #ffffff;
+}
+
+nav a.active:hover {
+  color: #ffffff;
+}
+
+.buttonatc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 20px;
+  margin-top: 1.34vw;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #0166ff;
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.buttonatc:hover {
+  background-color: white; /* Бледный цвет фона при наведении */
+  color: #0166ff;
+}
+
+.formcont {
+  position: relative;
+  overflow: hidden;
+}
+
+.formtextmain {
+  text-align: center;
+  margin-top: 2vw;
+}
+
+.form-section {
+  max-width: 800px;
+  margin: 2vw auto;
+  padding: 2vw;
+  background-color: white;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #a9b7c8;
+  font-size: 2vw;
+  margin-bottom: 0.5vw;
+}
+
+.form-group {
+  margin-bottom: 1.5vw;
+}
+
+label {
+  display: block;
+  font-family: 'Inter-SemiBold';
+  color: #7c8793;
+  font-size: 1vw;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='date'],
+input[type='password'],
+select,
+textarea {
+  padding: 0.8vw;
+  border: 0.1vw solid #bdc3c7;
+  border-radius: 0.3vw;
+  font-family: 'Inter-SemiBold';
+  font-size: 1vw;
+  color: #98a4b4;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin-top: 0.5vw;
+}
+
+.radio-item,
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin: 8px 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  margin-right: 0.5vw;
+}
+
+.submit-btn {
+  background-color: #0166ff;
+  color: white;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  font-size: 1.1vw;
+  font-family: 'Inter-SemiBold', Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0166ff;
+}

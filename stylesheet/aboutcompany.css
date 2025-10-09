@@ -126,6 +126,7 @@ nav a.active:hover {
   text-align: left;
   box-sizing: border-box;
 }
+
 .company-info-section {
   display: flex;
   justify-content: center;
@@ -173,19 +174,6 @@ nav a.active:hover {
   vertical-align: top;
 }
 
-.td_services p {
-  font-family: 'Inter-SemiBold';
-  font-size: 1vw;
-  color: #a9b7c8;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.arrow {
-  font-size: 30px;
-  color: #a9b7c8;
-}
-
 .td_production {
   width: 200px;
   height: 250px;
@@ -204,26 +192,13 @@ nav a.active:hover {
   height: 200px;
   padding: 20px;
   vertical-align: top;
-}
-
-.td_info p {
-  font-family: 'Inter-SemiBold';
-  font-size: 1vw;
-  color: #a9b7c8;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1.2vw;
 }
 
 .td_contacts {
   height: 80px;
   padding: 20px;
-}
-
-.contacts p {
-  font-family: 'Inter-SemiBold';
-  font-size: 1vw;
-  color: #a9b7c8;
-  margin: 5px 0;
+  line-height: 1.2vw;
 }
 
 .link {
@@ -232,10 +207,6 @@ nav a.active:hover {
 }
 
 .link:hover {
-  color: #ffffff;
+  color: #6e6e6e;
   text-decoration: underline;
-}
-
-.copyright {
-  font-size: 0.9vw;
 }

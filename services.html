@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ВТОРАЯ ДЕТАЛЬ</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html">
+        <div class="logo" id="logo">
+          <img class="logoim" src="./images/logo.svg" />
+        </div>
+      </a>
+      <nav>
+        <a href="aboutcompany.html">О компании</a>
+        <a href="services.html" class="active">Услуги</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="https://www.juventalaser.ru/">Наши партнеры</a>
+        <a href="placeanorder.html" class="button">Сделать заказ</a>
+      </nav>
+    </header>
+    <div class="problemsolving">
+      <h1 class="maintextproblem1">Решение алгоритмической задачи</h1>
+      <h2 class="maintextproblem">
+        1004. Можно ли в квадратном зале площадью S поместить круглую сцену
+        радиусом R так, чтобы от стены до сцены был проход не менее K?
+      </h2>
+
+      <div class="input-group">
+        <label class="secondlabel" for="area_s"
+          >Площадь квадратного зала (S):</label
+        >
+        <input
+          class="secondinput"
+          type="number"
+          id="area_s"
+          placeholder="Например, 100"
+        />
+      </div>
+
+      <div class="input-group">
+        <label class="secondlabel" for="radius_r"
+          >Радиус круглой сцены (R):</label
+        >
+        <input
+          class="secondinput"
+          type="number"
+          id="radius_r"
+          placeholder="Например, 5"
+        />
+      </div>
+
+      <div class="input-group">
+        <label class="secondlabel" for="passage_k"
+          >Минимальный проход (K):</label
+        >
+        <input
+          class="secondinput"
+          type="number"
+          id="passage_k"
+          placeholder="Например, 2"
+        />
+      </div>
+
+      <button class="button3" onclick="checkPlacement()">Проверить</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      function checkPlacement() {
+        const areaS = parseFloat(document.getElementById('area_s').value);
+        const radiusR = parseFloat(document.getElementById('radius_r').value);
+        const passageK = parseFloat(document.getElementById('passage_k').value);
+        const resultDiv = document.getElementById('result');
+
+        // Проверка на ввод корректных чисел
+        if (
+          isNaN(areaS) ||
+          isNaN(radiusR) ||
+          isNaN(passageK) ||
+          areaS <= 0 ||
+          radiusR <= 0 ||
+          passageK < 0
+        ) {
+          resultDiv.textContent =
+            'Пожалуйста, введите корректные положительные числа (для K допускается 0).';
+          resultDiv.className = 'no';
+          return;
+        }
+
+        // 1. Вычисляем сторону квадратного зала
+        const sideA = Math.sqrt(areaS);
+
+        // 2. Вычисляем требуемый "эффективный" диаметр с учетом прохода
+        // Диаметр сцены = 2 * R
+        // Общая ширина, которую нужно уместить = диаметр сцены + проход с двух сторон = 2 * R + 2 * K
+        const effectiveDiameter = 2 * radiusR + 2 * passageK;
+
+        // 3. Сравниваем: поместится ли, если эффективный диаметр <= стороне зала
+        if (effectiveDiameter <= sideA) {
+          resultDiv.textContent = 'Да, сцену можно разместить!';
+          resultDiv.className = 'yes';
+        } else {
+          resultDiv.textContent = 'Нет, сцену разместить невозможно.';
+          resultDiv.className = 'no';
+        }
+      }
+    </script>
+  </body>
+</html>
