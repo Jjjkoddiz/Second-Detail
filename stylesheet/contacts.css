@@ -245,3 +245,11 @@ nav a.active:hover {
   margin-bottom: 35px;
   height: 300px;
 }
+.zoomable-image {
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}
+
+.zoomable-image:active {
+  transform: scale(1.2); 
+}
